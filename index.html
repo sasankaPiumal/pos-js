@@ -13,7 +13,7 @@
 <body>
 <!--start log in process-->
 
-<div class="container">
+<div class="container" id="register-context">
     <div class="login-main-outer">
         <div class="login-inner">
             <h2 class="login-text">Login</h2>
@@ -35,7 +35,8 @@
             <div class="col-12">
                 <br>
                 <div class="form-group">
-                    <input type="button" value="Login" class="btn btn-primary" style="width: 100%!important; ">
+                    <input type="button" onclick="clearAndLoad()" value="Login" class="btn btn-primary"
+                           style="width: 100%!important; ">
                 </div>
             </div>
 
@@ -43,7 +44,8 @@
             <div class="col-12">
                 <br>
                 <div class="form-group">
-                    <input type="button" value="Create an account" class="btn btn-outline-dark" style="width: 100%!important;">
+                    <input type="button" value="Create an account" class="btn btn-outline-dark"
+                           style="width: 100%!important;">
                 </div>
             </div>
 
@@ -58,11 +60,11 @@
 
 <!--start the signup proccess-->
 <br>
-<div class="container">
+<div class="container" id="login-context">
     <div class="login-main-inner">
         <div class="signup-inner">
-        <h2 class="signup-text">Sign Up</h2>
-        <hr>
+            <h2 class="signup-text">Sign Up</h2>
+            <hr>
 
             <div class="col-12">
                 <div class="form-group">
@@ -71,26 +73,26 @@
                 </div>
             </div>
 
-        <div class="col-12">
-            <div class="form-group">
-                <label for="register-email" class="email">Email</label>
-                <input type="email" class="form-control" id="register-email">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="register-email" class="email">Email</label>
+                    <input type="email" class="form-control" id="register-email">
+                </div>
             </div>
-        </div>
 
-        <div class="col-12">
-            <div class="form-group">
-                <label for="register-password">Password</label>
-                <input type="password" class="form-control" id="register-password">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" class="form-control" id="register-password">
+                </div>
             </div>
-        </div>
 
-        <div class="col-12">
-            <br>
-            <div class="form-group">
-                <input type="button" value="Sign up" class="btn btn-success" style="width: 100%!important;">
+            <div class="col-12">
+                <br>
+                <div class="form-group">
+                    <input type="button" value="Sign up" class="btn btn-success" style="width: 100%!important;">
+                </div>
             </div>
-        </div>
 
             <div class="form-group">
                 <br>
@@ -106,6 +108,6 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-
+<script src="js/main.js"></script>
 </body>
 </html>
