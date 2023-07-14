@@ -1,4 +1,5 @@
 let userArray = [];
+let customerArr = [];
 
 class User {
     constructor(fullName, email, password) {
@@ -8,6 +9,17 @@ class User {
 
     }
 }
+
+class Customer{
+    constructor(name,address,salary,nic) {
+        this.name = name;
+        this.address = address;
+        this.salary = salary;
+        this.nic = nic;
+    }
+
+}
+
 
 const createUser = () => {
 
@@ -65,3 +77,28 @@ const login = ()=> {
 // }
 //
 // console.log("main.js")
+
+
+const createCustomer=()=>{
+
+
+}
+
+const findCustomer=()=>{
+
+
+}
+
+const updateCustomer=()=>{
+
+
+}
+const deleteCustomer=()=>{
+
+
+}
+
+const getAllCustomers=()=>{
+
+
+}
